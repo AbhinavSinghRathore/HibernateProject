@@ -1,4 +1,4 @@
-package com;
+package hibernatedemo;
 public class Product 
 {
 	private String prodId;

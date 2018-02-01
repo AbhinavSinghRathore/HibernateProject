@@ -1,7 +1,9 @@
-package com;
+package hibernatedemo;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.*;
 
 public class Demo 
 {
@@ -17,7 +19,7 @@ public class Demo
 		
 		Transaction transaction=session.beginTransaction();
 		
-		com.Product product=new com.Product();
+		hibernatedemo.Product product=new hibernatedemo.Product();
 		product.setProdId("P1002");
 		product.setProdName("Samsung Galaxy");
 		product.setPrice(11000);
